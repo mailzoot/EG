@@ -28,7 +28,9 @@
 *     has been dropped from each table.                   *;
 ***********************************************************;
 
-data indian atlantic pacific;
+data indian 
+	atlantic 
+	pacific;
 	set pg2.storm_summary; 
 	length Ocean $ 8;
 	Basin=upcase(Basin);
